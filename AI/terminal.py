@@ -1,7 +1,7 @@
 import os
-pwd=os.
+pwd=os.getcwd()
 while True:
-	command=raw_input("Terminal: ")
+	command=raw_input("%s: " %pwd)
 	if command == "exit":
 		break
 	else:
