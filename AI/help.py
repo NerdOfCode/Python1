@@ -1,3 +1,5 @@
 import os
 print("Below are the possible commands:")
-os.system("ls")
+ls=os.system("ls")
+ls-ls.replace(".py","")
+print(ls)
