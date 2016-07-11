@@ -1,6 +1,6 @@
 print("I am too, whats your favorite number?")
 
-userinput = raw_input("Your favorite number is ") 
+userinput = raw_input("Enter a number: ") 
 userinput=int(userinput)
 
 if userinput < 100:
