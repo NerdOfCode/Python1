@@ -1,1 +1,1 @@
-Welcome to our repository. We make various programs in python to help simplify your life.
+Welcome to our repository. We make various programs in python to help simplify your life. All programs in here are under th GNU General Publice License unless a different license is givin in the program itself.
