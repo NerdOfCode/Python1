@@ -1,7 +1,8 @@
+# You may only modify this for personal use. If you would like to use it for anything else, please contact me.
+#You may NOT use this for any illegal purposes.
+# I am not responsible for any damage caused by this.
 import sys
 brutelist=open("Brute.txt", "wb")
-#characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()<>,./?;:[]:|'\"\\"
-#characters = "1234567890"
 desiredPlacesstr=raw_input("How long is the password?: ")
 characters=raw_input("What characters are possibly in the password(leave blank for default): ") or "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()<>,./?;:[]:|'\"\\"
 desiredPlaces=int(desiredPlacesstr)
