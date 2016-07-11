@@ -1,4 +1,3 @@
-X
 print "I am too, whats your favorite number?"
 
 input = raw_input() 
