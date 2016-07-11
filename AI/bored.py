@@ -1,8 +1,12 @@
-
+X
 print "I am too, whats your favorite number?"
-x = 18
-x = raw_input() 
-if x:
-  print "Thats my favorite number too! | -Nate"
+
+input = raw_input() 
+number = 100
+
+
+
+if input > number:
+  print "That number is below 100"
 else:
-  print "That must be Gy's favorite number"
+  print "That is one big number!"
