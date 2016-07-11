@@ -7,4 +7,4 @@ for file in ls:
    if file == "data.dat" or file == "AI.py":
       continue
    file=file.replace(".py","")
-   print("%s;" %file,)
+   print "%s;" %file,
