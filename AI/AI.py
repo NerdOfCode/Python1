@@ -1,4 +1,5 @@
 import os
+import sys
 print("Hello, I am a Learning computer")
 #Check if name data exists
 datacheck=os.path.isfile("data.dat")
@@ -40,3 +41,4 @@ else:
 	file.truncate()
 	file.write(name)
 	print("Hello, %s, please restart this program." %name)
+	os.system("python AI.py")
