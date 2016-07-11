@@ -6,4 +6,4 @@ userinput=int(userinput)
 if userinput < 100:
   print("That number is below 100.")
 else:
-  print("That is one big number!")
+  print("Big number is detected")
