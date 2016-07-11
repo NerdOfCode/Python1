@@ -1,3 +1,4 @@
+# Copyright NerdOfLinux
 #You may NOT use this for any illegal purposes.
 # I am not responsible for any damage caused by this.
 import sys
