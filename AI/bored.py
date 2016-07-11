@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 148dd9d0b4eb3185048983dadddeadb4c73be802
 print "I am too, whats your favorite number?"
 
 input = raw_input("Your favorite number is ") 
