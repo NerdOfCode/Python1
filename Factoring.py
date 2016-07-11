@@ -1,3 +1,4 @@
+# You may only modify this for personal use. If you would like to use it for anything else, please contact me.
 #input is the number to add up to
 #inpu2 is the number to multiply to
 #x is the smallest possible answer
