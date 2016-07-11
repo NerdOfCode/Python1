@@ -1,4 +1,3 @@
-# You may only modify this for personal use. If you would like to use it for anything else, please contact me.
 #You may NOT use this for any illegal purposes.
 # I am not responsible for any damage caused by this.
 import sys
