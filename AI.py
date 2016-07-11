@@ -20,7 +20,7 @@ if datacheck == 1:
 		if programcheck == 1:
 			#Run the program using os.system
 			os.system("python %s.py" %command)
-			continueq
+			continue
 		else:
 			#Ask the user is they would like to make a program
 			print("Sorry, I cant do that yet.")
