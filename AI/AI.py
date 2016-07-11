@@ -40,5 +40,5 @@ else:
 	file = open("data.dat", 'w')
 	file.truncate()
 	file.write(name)
-	print("Hello, %s, please restart this program." %name)
+	print("Hello, %s, restarting program."%name)
 	os.system("python AI.py")
