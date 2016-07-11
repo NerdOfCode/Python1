@@ -3,5 +3,6 @@ from os import listdir
 print("Below are the possible commands:")
 directory=os.popen("pwd")
 ls=os.listdir(pwd)
-ls=ls.replace(".py","")
-print(ls)
+for file in ls:
+   file=file.replace(".py","")
+   print file
