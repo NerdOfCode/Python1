@@ -1,5 +1,4 @@
 # Copyright NerdOfLinux
-# You may only modify this for personal use. If you would like to use it for anything else, please contact me.
 #Import required libraries
 import os
 import sys
