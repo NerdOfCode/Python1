@@ -1,2 +1,2 @@
-print "First ""g++ filename"" to compile"
-print "Then ./filename"
+echo "First ""g++ filename"" to compile"
+echo "Then ./filename"
