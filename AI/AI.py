@@ -51,6 +51,10 @@ if datacheck == 1:
 			os.system("java %s" %command)
 			os.remove("%s.class" %command)
 			continue
+                elif cppcheck == 1:
+                        os.system("g++ %s.cpp" %command)
+                        os.system("g++ %s" %command)
+                        os.remove("%s.class" %command)
 		else:
 			#Ask the user is they would like to make a program
 			print("Sorry, I cant do that yet.")
