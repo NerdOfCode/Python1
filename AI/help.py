@@ -10,6 +10,8 @@ for file in ls:
       file=file.replace(".py","")
    elif ".sh" in file:
       file=file.replace(".sh","")
+   elif ".java" in file:
+      file=file.replace(".java", "")
    else:
       continue
    print "%s;" %file,
