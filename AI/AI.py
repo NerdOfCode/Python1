@@ -7,7 +7,18 @@ datacheck=os.path.isfile("data.dat")
 if datacheck == 1:
 	#Make data file a variable
 	with open('data.dat', 'r') as datafile:
-		name=datafile.read()
+		data=datafile.read()
+	name=raw_input("Which user are you?: ")
+	if name in data:
+		name=name
+	else:
+		print("That is not a user. Making a new one...")
+		print("What is your name?")
+		name = raw_input("Name: ")
+		#Write user's name to a file
+		file = open("data.dat", 'w')
+		file.truncate()
+		file.write(name)
 	#Ask for command
 	while True:
 		print("Hello, %s, how can I help you?" %name) 
