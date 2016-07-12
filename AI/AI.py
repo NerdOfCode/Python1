@@ -8,7 +8,7 @@ if datacheck == 1:
 	#Make data file a variable
 	with open('data.dat', 'r') as datafile:
 		data=datafile.read()
-	name=raw_input("Which user are you?: ")
+	name=raw_input("Which user are you (full user name)?: ")
 	if name in data:
 		name=name
 	else:
