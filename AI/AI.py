@@ -55,7 +55,7 @@ if datacheck == 1:
 			continue
                 elif cppcheck == 1:
                         os.system("g++ %s.cpp" %command)
-                        os.system("g++ %s" %command)
+                        os.system(" ./%s" %command)
                         os.remove("%s.out" %command)
 		else:
 			#Ask the user is they would like to make a program
