@@ -1,5 +1,5 @@
 import os
-with open('data.dat', 'r') as datafile:
+with open('.data.dat', 'r') as datafile:
 	name=datafile.read()
 pwd=os.getcwd()
 while True:
