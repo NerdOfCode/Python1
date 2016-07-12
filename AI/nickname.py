@@ -2,12 +2,12 @@ import os
 import sys
 
 print "Hello what is your nickname"
-nick = datacheck=os.path.isfile("nick.data")
+datacheck=os.path.isfile("nick.data")
 
 if datacheck == 1:
  with open('nick.data', 'r') as datafile:
                 name=datafile.read()
-print "Hello %s" %nick
+print "Hello %s, you already are registered with your nickname!" %name
 else:
 print "I dont know currently know your nickname!"
 print "Enter it now: " 
