@@ -9,15 +9,18 @@ if datacheck == 1:
 	with open('.data.dat', 'r') as datafile:
 		data=datafile.read()
 	name=raw_input("Which user are you (full user name)?: ")
+	#If the name is in the datafile and they have a custom file
 	if name in data and os.path.isfile(".%s.dat" %name):
 		name1=name
 	else:
 		print("That is not a user. Making a new one...")
 		print("What is your name?")
+		#Make a new user
 		name1 = raw_input("Name(blank for what you entered above): ") or name
 		with open('.data.dat', 'a') as datafile:
 			datafile.write("\n")
 			datafile.write(name)
+		#Make a custom use file
 		with open(".%s.dat" %name, 'w') as userfile:
 			userfile.write("")
 			
