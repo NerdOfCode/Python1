@@ -55,8 +55,15 @@ if datacheck == 1:
 			continue
                 elif cppcheck == 1:
                         os.system("g++ %s.cpp" %command)
+<<<<<<< HEAD
                         os.system(" ./%s" %command)
                         os.remove("%s.out" %command)
+=======
+                        os.system("g++ %s" %command)
+                        os.remove("?.out")
+                elif ccheck == 1:
+                	
+>>>>>>> a1ab3f5c8aaf87ea19a9db05aaf566a894bb9380
 		else:
 			#Ask the user is they would like to make a program
 			print("Sorry, I cant do that yet.")
