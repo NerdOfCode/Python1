@@ -15,6 +15,7 @@ if datacheck == 1:
 		#Check if the command has a program
 		programcheck=os.path.isfile("%s.py" %command)
 		shellcheck=os.path.isfile("%s.sh" %command)
+		javacheck=os.path.isfile("%s.java" %command)
 		#Replace space with backslash and space
 		command = command.replace(" ", "\\ ")
 		#If there is a program then
@@ -24,6 +25,10 @@ if datacheck == 1:
 			continue
 		elif shellcheck == 1:
 			os.system("bash %s.sh" %command)
+			continue
+		elif javacheck == 1:
+			os.system("javac c %s.sh"  %command)
+			os.system("java %s" %command)
 			continue
 		else:
 			#Ask the user is they would like to make a program
