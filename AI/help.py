@@ -8,6 +8,8 @@ for file in ls:
       continue
    if ".py" or ".sh" not in file:
       continue
-   file=file.replace(".py","")
-   file=file.replace(".sh","")
+   if ".py" in file:
+      file=file.replace(".py","")
+   elif ".sh" in file:
+      file=file.replace(".sh","")
    print "%s;" %file,
