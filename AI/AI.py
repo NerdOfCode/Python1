@@ -6,7 +6,7 @@ datacheck=os.path.isfile("data.dat")
 #If the file exists then
 if datacheck == 1:
 	#Make data file a variable
-	with open('data.dat', 'a') as datafile:
+	with open('data.dat', 'r') as datafile:
 		data=datafile.read()
 	name=raw_input("Which user are you?: ")
 	if name in data:
@@ -15,6 +15,8 @@ if datacheck == 1:
 		print("That is not a user. Making a new one...")
 		print("What is your name?")
 		name = raw_input("Name(blank for what you entered above): ") or name
+		with open('data.dat', 'a') as datafile:
+			datafile.write(name)
 		#Write user's name to a file
 		file = open("data.dat", 'w')
 		file.truncate()
