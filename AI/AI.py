@@ -16,7 +16,10 @@ if datacheck == 1:
 		print("That is not a user. Making a new one...")
 		print("What is your name?")
 		#Make a new user
-		name1 = raw_input("Name(blank for what you entered above): ") or name
+		name1 = raw_input("Name(no spaces)(blank for what you entered above): ") or name
+		while " " in name1:
+			print("No spaces allowed")
+			name1 = raw_input("Name(no spaces)(blank for what you entered above): ") or name
 		with open('.data.dat', 'a') as datafile:
 			datafile.write("\n")
 			datafile.write(name)
