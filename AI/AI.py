@@ -2,7 +2,7 @@ import os
 import sys
 print("Hello, I am a Learning computer")
 #Check if name data exists
-datacheck=os.path.isfile("data.dat")
+datacheck=os.path.isfile(".data.dat")
 #If the file exists then
 if datacheck == 1:
 	#Make data file a variable
