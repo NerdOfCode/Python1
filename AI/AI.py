@@ -57,7 +57,7 @@ if datacheck == 1:
 			print("Would you like to make a program for that y)es or n)o?")
 			makefile=raw_input()
 			if makefile == "y":
-				shell=raw_input("Would you like it to be a s)hell script, p)ython, or j)ava?: ")
+				shell=raw_input("Would you like it to be a s)hell script, p)ython, j)ava?, c), or c++?: ")
 				if shell == "s":
 					os.system("nano %s.sh" %command)
 					continue
@@ -65,7 +65,13 @@ if datacheck == 1:
 					os.system("nano %s.py" %command)
 					continue
 				elif shell == "j":
-					os.system("nano %s.java")
+					os.system("nano %s.java" %command)
+					continue
+				elif shell == "c":
+					os.system("nano %s.c" %command)
+					continue
+				elif shell == "c++":
+					os.system("nano %s.cpp" %command)
 					continue
 				else:
 					print("Error, please try again.")
