@@ -18,6 +18,9 @@ if datacheck == 1:
 		with open('data.dat', 'a') as datafile:
 			datafile.write("\n")
 			datafile.write(name)
+		with open("%s.dat" %name, 'w') as userfile:
+			userfile.write("")
+			
 		#Write user's name to a file
 	#Ask for command
 	while True:
