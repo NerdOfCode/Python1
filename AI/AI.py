@@ -10,11 +10,11 @@ if datacheck == 1:
 		data=datafile.read()
 	name=raw_input("Which user are you (full user name)?: ")
 	if name in data and os.path.isfile(".%s.dat" %name):
-		name=name
+		name1=name
 	else:
 		print("That is not a user. Making a new one...")
 		print("What is your name?")
-		name = raw_input("Name(blank for what you entered above): ") or name
+		name1 = raw_input("Name(blank for what you entered above): ") or name
 		with open('.data.dat', 'a') as datafile:
 			datafile.write("\n")
 			datafile.write(name)
@@ -24,7 +24,7 @@ if datacheck == 1:
 		#Write user's name to a file
 	#Ask for command
 	while True:
-		print("Hello, %s, how can I help you?" %name) 
+		print("Hello, %s, how can I help you?" %name1) 
 		command=raw_input("Command: ")
 		#Check if the command has a program
 		programcheck=os.path.isfile("%s.py" %command)
