@@ -75,5 +75,7 @@ else:
 	file = open("data.dat", 'w')
 	file.truncate()
 	file.write(name)
+	with open("%s.dat" %name, 'w') as userfile:
+		userfile.write("")
 	print("Hello, %s, restarting program."%name)
 	os.system("python AI.py")
