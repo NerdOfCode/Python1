@@ -1,2 +1,2 @@
-import time
-print(time.strftime("%d/%m/%Y"))
+import os
+os.system("date")
