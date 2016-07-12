@@ -76,7 +76,10 @@ if datacheck == 1:
 else:
 	#Get name
 	print("What is your name?")
-	name = raw_input("Name: ")
+	name = raw_input("Name(no spaces): ")
+	while " " in name:
+		print("No spaces.")
+		name = raw_input("Name(no spaces): ")
 	#Write user's name to a file
 	file = open(".data.dat", 'w')
 	file.truncate()
