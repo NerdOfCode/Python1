@@ -27,8 +27,9 @@ if datacheck == 1:
 			os.system("bash %s.sh" %command)
 			continue
 		elif javacheck == 1:
-			os.system("javac c %s.sh"  %command)
+			os.system("javac %s.sh"  %command)
 			os.system("java %s" %command)
+			os.remove("%s.class" %command)
 			continue
 		else:
 			#Ask the user is they would like to make a program
