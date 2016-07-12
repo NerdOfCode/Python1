@@ -17,5 +17,13 @@ elif "Micheal" in name:
     print "Hi Mike"
 elif "David" in name:
     print "What's up Dave!"
+elif "Alma" in name:
+    print "I did not find a nickname for you, sorry!"
+elif "Alyssa" in name:
+    print "Hey sus"
+elif "Jaclyn" in name:
+    print "Hey Jackie"
+elif "Talayah" in name:
+    print "I dont think you have  a nickname!"
 else:
-    print "Name not detected"
+    print "Name not detected, errors detected"
