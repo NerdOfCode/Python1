@@ -16,6 +16,7 @@ if datacheck == 1:
 		print("What is your name?")
 		name = raw_input("Name(blank for what you entered above): ") or name
 		with open('data.dat', 'a') as datafile:
+			datafile.write("\n")
 			datafile.write(name)
 		#Write user's name to a file
 	#Ask for command
