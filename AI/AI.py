@@ -18,9 +18,6 @@ if datacheck == 1:
 		with open('data.dat', 'a') as datafile:
 			datafile.write(name)
 		#Write user's name to a file
-		file = open("data.dat", 'w')
-		file.truncate()
-		file.write(name)
 	#Ask for command
 	while True:
 		print("Hello, %s, how can I help you?" %name) 
