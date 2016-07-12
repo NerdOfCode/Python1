@@ -44,7 +44,7 @@ if datacheck == 1:
 			os.system("python %s.py %s" %(command, name1))
 			continue
 		elif shellcheck == 1:
-			os.system("bash %s.sh %s" %(command, name1)))
+			os.system("bash %s.sh %s" %(command, name1))
 			continue
 		elif javacheck == 1:
 			os.system("javac %s.java"  %command)
