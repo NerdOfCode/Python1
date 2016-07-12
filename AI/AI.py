@@ -23,7 +23,7 @@ if datacheck == 1:
 			os.system("python %s.py" %command)
 			continue
 		elif shellcheck == 1:
-			os.system("bash %s.sh)
+			os.system("bash %s.sh" %command)
 			continue
 		else:
 			#Ask the user is they would like to make a program
