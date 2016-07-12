@@ -31,7 +31,7 @@ if datacheck == 1:
 			print("Would you like to make a program for that y)es or n)o?")
 			makefile=raw_input()
 			if makefile == "y":
-				shell=raw_input("Would you like it to be a s)hell script or p)ython?")
+				shell=raw_input("Would you like it to be a s)hell script or p)ython?: ")
 				if shell == "s":
 					os.system("nano %s.sh" %command)
 					continue
