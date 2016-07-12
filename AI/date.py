@@ -1,3 +1,3 @@
-import os
-date=os.popen("date")
-print("The date is currently: %s" %date)
+import time
+date=time.strftime("%m/%d/%y")
+print(date)
