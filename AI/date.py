@@ -1,3 +1,3 @@
 import os
-date=os.system("date")
+date=os.popen("date")
 print("The date is currently: %s" %date)
