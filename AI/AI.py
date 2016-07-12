@@ -6,19 +6,19 @@ datacheck=os.path.isfile("data.dat")
 #If the file exists then
 if datacheck == 1:
 	#Make data file a variable
-	with open('data.dat', 'r') as datafile:
+	with open('.data.dat', 'r') as datafile:
 		data=datafile.read()
 	name=raw_input("Which user are you (full user name)?: ")
-	if name in data and os.path.isfile("%s.dat" %name):
+	if name in data and os.path.isfile(".%s.dat" %name):
 		name=name
 	else:
 		print("That is not a user. Making a new one...")
 		print("What is your name?")
 		name = raw_input("Name(blank for what you entered above): ") or name
-		with open('data.dat', 'a') as datafile:
+		with open('.data.dat', 'a') as datafile:
 			datafile.write("\n")
 			datafile.write(name)
-		with open("%s.dat" %name, 'w') as userfile:
+		with open(".%s.dat" %name, 'w') as userfile:
 			userfile.write("")
 			
 		#Write user's name to a file
@@ -72,10 +72,10 @@ else:
 	print("What is your name?")
 	name = raw_input("Name: ")
 	#Write user's name to a file
-	file = open("data.dat", 'w')
+	file = open(".data.dat", 'w')
 	file.truncate()
 	file.write(name)
-	with open("%s.dat" %name, 'w') as userfile:
+	with open(".%s.dat" %name, 'w') as userfile:
 		userfile.write("")
 	print("Hello, %s, restarting program."%name)
 	os.system("python AI.py")
