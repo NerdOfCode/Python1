@@ -14,7 +14,7 @@ if datacheck == 1:
 	else:
 		print("That is not a user. Making a new one...")
 		print("What is your name?")
-		name = raw_input("Name: ")
+		name = raw_input("Name(blank for what you entered above): ") or name
 		#Write user's name to a file
 		file = open("data.dat", 'w')
 		file.truncate()
