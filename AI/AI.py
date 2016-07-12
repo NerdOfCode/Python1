@@ -9,7 +9,7 @@ if datacheck == 1:
 	with open('data.dat', 'r') as datafile:
 		data=datafile.read()
 	name=raw_input("Which user are you (full user name)?: ")
-	if name in data:
+	if name in data and os.path.isfile(name):
 		name=name
 	else:
 		print("That is not a user. Making a new one...")
