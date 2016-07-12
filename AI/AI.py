@@ -27,7 +27,7 @@ if datacheck == 1:
 			os.system("bash %s.sh" %command)
 			continue
 		elif javacheck == 1:
-			os.system("javac %s.sh"  %command)
+			os.system("javac %s.java"  %command)
 			os.system("java %s" %command)
 			os.remove("%s.class" %command)
 			continue
