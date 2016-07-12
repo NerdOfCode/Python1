@@ -4,7 +4,7 @@ print("Below are the possible commands:")
 pwd=os.getcwd()
 ls=os.listdir(pwd)
 for file in ls:
-   if file == "data.dat" or file == "AI.py":
+   if file == "AI.py":
       continue
    if ".py" in file:
       file=file.replace(".py","")
