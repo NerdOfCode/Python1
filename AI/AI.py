@@ -38,7 +38,7 @@ if datacheck == 1:
 		#If there is a program then
 		if programcheck == 1:
 			#Run the program using os.system
-			os.system("python %s.py %s" %(command, name))
+			os.system("python %s.py %s" %(command, name1))
 			continue
 		elif shellcheck == 1:
 			os.system("bash %s.sh" %command)
