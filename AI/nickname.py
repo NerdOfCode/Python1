@@ -1,15 +1,21 @@
 import os
 import sys
 
-print "Hello what is your nickname"
-datacheck=os.path.isfile("nick.data")
 
-if datacheck == 1:
- with open('nick.data', 'r') as datafile:
-  name=datafile.read()
-print "Hello %s, you already are registered with your nickname!" %name
-   else:
-        print "I dont know currently know your nickname!"
-        print "Enter it now: " 
-        name = raw_input()
-        print "Saving %s, as your nickname!" %name
+print "What is your name: "
+name = raw_input()
+
+if "Nathan" in name:
+    print "Hello Nate"
+elif "Gy" in name:
+    print "NO nickname for GY!!!"
+elif "Jacob" in name:
+    print "Hi Jay/Jake"
+elif "Diana" in name:
+    print "No nickname for you!!!"
+elif "Micheal" in name:
+    print "Hi Mike"
+elif "David" in name:
+    print "What's up Dave!"
+else:
+    print "Name not detected"
