@@ -77,5 +77,4 @@ else:
 	file.write(name)
 	with open(".%s.dat" %name, 'w') as userfile:
 		userfile.write("")
-	print("Hello, %s, restarting program."%name)
-	os.system("python AI.py")
+	print("Hello, %s, please restart the program."%name)
