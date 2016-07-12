@@ -6,7 +6,7 @@ datacheck=os.path.isfile("data.dat")
 #If the file exists then
 if datacheck == 1:
 	#Make data file a variable
-	with open('data.dat', 'r') as datafile:
+	with open('data.dat', 'a') as datafile:
 		data=datafile.read()
 	name=raw_input("Which user are you?: ")
 	if name in data:
