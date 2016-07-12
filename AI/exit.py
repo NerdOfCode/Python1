@@ -1,5 +1,4 @@
-import sys
-print("Bye.")
-sys.exit()
+import os
+os.system("python Bye.py")
 
 
