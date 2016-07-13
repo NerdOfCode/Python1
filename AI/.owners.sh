@@ -26,8 +26,7 @@ echo "What would you like to view?"
 read view
 if [ $view = 'users' ]
 then
-echo "Okay"
-users
+echo $1
 else
 echo "Bye for now!!!!!"
 exit
