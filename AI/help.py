@@ -12,10 +12,10 @@ for file in ls:
       file=file.replace(".sh","")
    elif ".java" in file:
       file=file.replace(".java", "")
-   elif ".c" in file:
-      file=file.replace(".c", "")
    elif ".cpp" in file:
       file=file.replace(".cpp", "")
+   elif ".c" in file:
+      file=file.replace(".c", "")
    else:
       continue
    print "%s;" %file,
