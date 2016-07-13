@@ -9,7 +9,6 @@ while True
 do
 	((number++))
 	hashtest=$(echo $number | md5)
-	echo $number
 	if [ $hashtest == $var ]
 	then
 		echo "Your number is: $number"
