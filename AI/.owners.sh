@@ -22,3 +22,14 @@ echo "Incorrect"
 exit 
 
   fi
+echo "What would you like to view?"
+read view
+if [ $view = 'users' ]
+then
+echo "Okay"
+users
+else
+echo "Bye for now!!!!!"
+exit
+fi
+
