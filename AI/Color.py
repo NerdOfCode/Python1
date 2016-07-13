@@ -5,7 +5,8 @@ with open('.%s.dat' %name, 'r') as datafile:
 	lines=datafile.readlines()
 if "Favorite Color:" in data:
   print(data)
-  color=data.split("16",1)[1]
+  line1=lines[0]
+  color=line1.split("16",1)[1]
   print("Hello, %s, your favorite color is: %s" %(name, color))
 elif "Favorite Color:" not in data:
   print("Hello, %s." %name)
