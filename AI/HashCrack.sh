@@ -1,7 +1,8 @@
 #/bin/bash
 #Only works with numbers
 #Set var to hash
-var=""
+echo "Enter hash you want to crack:"
+read var
 number=0
 hashtest=$(echo $number | md5)
 while True
