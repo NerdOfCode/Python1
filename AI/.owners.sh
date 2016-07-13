@@ -1,5 +1,5 @@
 clear
-
+alias md5='md5sum'
 echo "You are about to access the restricted owners panel (y-yes n-no)"
 read ans
 if [ $ans = 'y' ]
