@@ -36,7 +36,6 @@ if datacheck == 1:
 		programcheck=os.path.isfile("%s.py" %command)
 		shellcheck=os.path.isfile("%s.sh" %command)
 		javacheck=os.path.isfile("%s.java" %command)
-		ccheck=os.path.isfile("%s.c" %command)
 		cppcheck=os.path.isfile("%s.cpp" %command)
 		#Replace space with backslash and space -line=40
 		command = command.replace(" ", "\\ ")
