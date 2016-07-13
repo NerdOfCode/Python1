@@ -11,10 +11,12 @@ exit
 fi
 echo "Please enter your owners id"
 read pass
-if [ $pass = '1812' ] 
+if [ $pass = '1812' ]  
 then
 echo "Welcome Nathan"
+
 elif [ $pass = '1218' ]
+
 then
 echo "Welcome Gy"
 else
@@ -27,8 +29,7 @@ read view
 if [ $view = 'users' ]
 then
 echo $1
-else
-echo "Bye for now!!!!!"
+else 
+echo "No support"
 exit
 fi
-
