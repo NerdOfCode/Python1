@@ -3,7 +3,7 @@ name=sys.argv[1]
 with open('.%s.dat' %name, 'r') as datafile:
 	data=datafile.read()
 	lines=datafile.readlines()
-print(data)
+print(lines[1])
 if "Favorite Color: " in data:
   data=lines[1]
   color=data.split("16",1)[1]
