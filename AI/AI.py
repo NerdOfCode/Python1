@@ -30,7 +30,7 @@ if datacheck == 1:
 		#Write user's name to a file -line=29
 	#Ask for command -line=30
 	while True:
-		print("\n")
+		print("")
 		print("Hello, %s, how can I help you?" %name1) 
 		command=raw_input("Command: ")
 		#Check if the command has a program -line=34
