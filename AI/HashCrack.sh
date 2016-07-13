@@ -11,7 +11,7 @@ do
 	hashtest=$(echo $number | md5)
 	if [ $hashtest == var ]
 	then
-		echo $number
+		echo "Your number is: $number"
 		exit
 	fi
 done
