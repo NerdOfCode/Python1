@@ -1,9 +1,9 @@
 import sys
 name=sys.argv[1]
 with open('.%s.dat' %name, 'r') as datafile:
-		data=datafile.read()
+	data=datafile.read()
+	lines=datafile.readlines()
 if "Favorite Color: " in data:
-  lines=datafile.readlines()
   data=lines[1]
   color=data.split("16",1)[1]
   print("Hello, %s, your favorite color is: %s" %(name, color))
