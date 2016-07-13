@@ -11,10 +11,11 @@ exit
 fi
 echo "Please enter your owners id"
 read pass
-if [ $pass = '1812' ] 
+pass=$(echo $pass | md5)
+if [ $pass = '78447e5802a3ca1b35653282d9d53589' ] 
 then
 echo "Welcome Nathan"
-elif [ $pass = '1218' ]
+elif [ $pass = 'efb632bb211e02dc56d4be50774c70df' ]
 then
 echo "Welcome Gy"
 else
