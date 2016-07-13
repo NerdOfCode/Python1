@@ -55,8 +55,8 @@ if datacheck == 1:
 			continue
                 elif cppcheck == 1:
                         os.system("g++ %s.cpp" %command)
-                        os.system(" ./%s" %command)
-                        #os.remove("%s.out" %command) -line=58
+                        os.system("./a.out")
+                        os.remove("a.out")
                         
 	        else: 
 			#Ask the user is they would like to make a program -line=around63
