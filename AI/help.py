@@ -6,6 +6,8 @@ ls=os.listdir(pwd)
 for file in ls:
    if file == "AI.py":
       continue
+   if file[0] == ".":
+      continue
    if ".py" in file:
       file=file.replace(".py","")
    elif ".sh" in file:
