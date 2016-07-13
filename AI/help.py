@@ -14,8 +14,6 @@ for file in ls:
       file=file.replace(".java", "")
    elif ".cpp" in file:
       file=file.replace(".cpp", "")
-   elif ".c" in file:
-      file=file.replace(".c", "")
    else:
       continue
    print "%s;" %file,
