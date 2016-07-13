@@ -7,6 +7,7 @@ if "Favorite Color:" in data:
     if "Favorite Color:" in line:
     	line1=line
     	break
+  print(line1)
   color=line1.split("16", 1)[1]
   print("Hello, %s, your favorite color is: %s" %(name, color))
 elif "Favorite Color:" not in data:
