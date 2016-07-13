@@ -46,14 +46,17 @@ if datacheck == 1:
 			os.system("python %s.py %s" %(command, name1))
 			continue
 		elif shellcheck == 1:
+			#Run using bash
 			os.system("bash %s.sh %s" %(command, name1))
 			continue
 		elif javacheck == 1:
+			#Compile and run java
 			os.system("javac %s.java"  %command)
 			os.system("java %s" %command)
 			os.remove("%s.class" %command)
 			continue
                 elif cppcheck == 1:
+                	#Compile and run c++
                         os.system("g++ %s.cpp" %command)
                         os.system("./a.out")
                         os.remove("a.out")
