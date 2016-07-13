@@ -1,6 +1,7 @@
 clear
 echo "You are about to access the restricted owners panel (y-yes n-no)"
 read ans
+alias md5="md5sum"
 if [ $ans = 'y' ]
 then
   echo "Okay"
