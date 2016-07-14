@@ -7,13 +7,13 @@ if "Favorite Number: " in data:
     if "Favorite Number: " in line:
         line1=line
         break
-  color=line1.split("Color: ", 1)[1]
-  print("Hello, %s, your favorite number is %s" %(name, color))
+  number=line1.split("Favorite Number: ", 1)[1]
+  print("Hello, %s, your favorite number is %s" %(name, number))
 elif "Favorite Number: " not in data:
   print("Hello, %s." %name)
-  color=raw_input("What is your favorite Number?: ")
+  number=raw_input("What is your favorite Number?: ")
   with open('.%s.dat' %name, 'a') as datafile:
-    datafile.write("Favorite Numer: %s" %color)
+    datafile.write("Favorite Numer: %s" %number)
     datafile.write("\n")
 
 
