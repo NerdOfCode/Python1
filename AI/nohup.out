@@ -1,0 +1,22 @@
+
+WARNING: apt does not have a stable CLI interface yet. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  cifs-utils libconfig9 libhdb9-heimdal libkdc2-heimdal libntdb1
+  localechooser-data python-ntdb
+Use 'apt-get autoremove' to remove them.
+The following NEW packages will be installed:
+  hashalot
+0 upgraded, 1 newly installed, 0 to remove and 1 not upgraded.
+Need to get 16.3 kB of archives.
+After this operation, 73.7 kB of additional disk space will be used.
+Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty/universe hashalot i386 0.3-5 [16.3 kB]
+Fetched 16.3 kB in 0s (94.2 kB/s)
+Selecting previously unselected package hashalot.
+
+WARNING: apt does not have a stable CLI interface yet. Use with caution in scripts.
+
+Reading package lists...
