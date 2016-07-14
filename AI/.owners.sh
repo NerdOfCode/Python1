@@ -9,8 +9,8 @@ else
   exit
 fi
 echo "Please enter your owners id"
-read pass
-pass=$(echo "$pass" | openssl enc -e -aes256 -k symmetrickey)
+read input
+pass=$(echo "$input" | openssl enc -e -aes256 -k symmetrickey)
 
 if [ "$pass" = 'Salted__???V+???]?N!X?:z?>' ] 
 then
