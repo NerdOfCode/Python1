@@ -23,7 +23,7 @@ then
 fi
 echo "What would you like to view?"
 read view
-if [ $view = 'users' ]
+if [ $view == 'users' ]
 then
   echo $1
   else 
