@@ -11,7 +11,7 @@ public class numbgen
 	{	try
 		{	PrintStream writer = new PrintStream( new File("randInts.txt"));
 			Random r = new Random();
-			final int LIMIT = 100;
+			final int LIMIT = 1000;
 
 			for(int i = 0; i < LIMIT; i++)
 			{	writer.println( r.nextInt() );
