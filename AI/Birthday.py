@@ -7,7 +7,12 @@ if "Birthday:" in data:
     if "Birthday" in line:
     	line1=line
     	break
-  color=line1.split("Color: ", 1)[1]
+  birthday=line1.split("Birthday: ", 1)[1]
+  date=time.strftime("%m/%d/%Y")
+  if date == birthday:
+  	print("Happy birthday!")
+  else:
+  	print("Your birthday is on %s" %birthday)
 elif "Birthday" not in data:
   print("Hello, %s." %name)
   birthday=raw_input("When is your birthday(in numbers)(month/day/year)?: ")
