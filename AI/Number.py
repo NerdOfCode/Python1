@@ -4,7 +4,7 @@ with open('.%s.dat' %name, 'r') as datafile:
         data=datafile.read()
 if "Favorite Number:" in data:
   for line in data.splitlines():
-    if "Favorite Number: " in line:
+    if "Favorite Number:" in line:
         line1=line
         break
   number=line1.split("Favorite Number: ", 1)[1]
