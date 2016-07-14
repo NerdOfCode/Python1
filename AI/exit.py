@@ -1,4 +1,4 @@
 import os
-os.system("python Bye.py")
+os.system("python bye.py")
 os.system("clear")
 os.system("reset")

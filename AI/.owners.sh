@@ -23,10 +23,11 @@ then
 fi
 echo "What would you like to view?"
 read view
-if [ $view == 'users' ]
+if [ $view = 'uptime' ]
 then
-  echo $1
+  uptime
   else 
-  echo "No support"
+  echo "Your request has been logged"
+  echo $view >> $1.log
   exit
 fi
