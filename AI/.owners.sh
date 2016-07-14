@@ -1,7 +1,6 @@
 clear
 echo "You are about to access the restricted owners panel (y-yes n-no)"
 read ans
-alias md5="md5sum"
 if [ $ans = 'y' ]
 then
   echo "Okay"
@@ -11,12 +10,12 @@ else
 fi
 echo "Please enter your owners id"
 read pass
-pass=$(echo $pass | md5)
+pass=$(echo "$pass" | openssl enc -e -aes256 -k symmetrickey)
 
-if [ "$pass" = '78447e5802a3ca1b35653282d9d53589' ] 
+if [ "$pass" = 'Salted__???V+???]?N!X?:z?>' ] 
 then
   echo "Welcome Nathan"
-elif [ "$pass" = 'efb632bb211e02dc56d4be50774c70df' ]
+elif [ "$pass" = 'Salted__??B???Շp?>???D???1.?' ]
 then
   echo "Welcome Gy"
   else
