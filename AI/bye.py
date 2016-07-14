@@ -1,5 +1,3 @@
-import sys
+import os
 print("Bye.")
-sys.exit()
-
-
+os.system("killall python 2> /dev/null")
