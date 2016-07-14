@@ -10,8 +10,7 @@ if "Birthday:" in data:
     	break
   birthday=line1.split("Birthday: ", 1)[1]
   date=time.strftime("%m/%d")
-  print(date)
-  if date == birthday:
+  if birthday in date:
   	print("Happy birthday!")
   else:
   	print("Your birthday is on %s" %birthday)
