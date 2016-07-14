@@ -12,6 +12,6 @@ if "Favorite Color:" in data:
 elif "Favorite Color:" not in data:
   print("Hello, %s." %name)
   color=raw_input("What is your favorite color?: ")
-  with open('.%s.dat' %name, 'w') as datafile:
+  with open('.%s.dat' %name, 'a') as datafile:
     datafile.write("Favorite Color: %s" %color)
     datafile.write("\n")
