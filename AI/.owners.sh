@@ -11,7 +11,6 @@ fi
 echo "Please enter your owners id"
 read input
 pass=$(echo "$input" | openssl enc -e -aes256 -k symmetrickey)
-echo $pass
 if [ "$pass" = 'Salted__???V+???]?N!X?:z?>' ] 
 then
   echo "Welcome Nathan"
