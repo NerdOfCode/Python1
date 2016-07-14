@@ -10,7 +10,7 @@ else
 fi
 echo "Please enter your owners id"
 read input
-pass=$(echo "$input" | openssl dgst -sha512)
+pass=$(echo "$input" | openssl dgst -sha512 | sed 's/^.* //')
 if [ "$pass" = '3ebb46cf6d743654d4878631021e416fe59408573c570f38892969642810975e6c5cb80aa35b0e5aa31868914b2673fa0945daeeeac3ffa5a3cdd2c829a570a9' ] 
 then
   echo "Welcome Nathan"
