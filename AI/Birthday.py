@@ -1,4 +1,5 @@
 import sys
+import datetime
 name=sys.argv[1]
 with open('.%s.dat' %name, 'r') as datafile:
 	data=datafile.read()
