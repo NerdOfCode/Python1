@@ -14,7 +14,7 @@ elif "Favorite Number:" not in data:
   print("Hello, %s." %name)
   number=raw_input("What is your favorite Number?: ")
   with open('.%s.dat' %name, 'a') as datafile:
-    datafile.write("Favorite Numer: %s" %number)
+    datafile.write("Favorite Number: %s" %number)
     datafile.write("\n")
 
 
