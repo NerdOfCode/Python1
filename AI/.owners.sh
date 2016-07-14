@@ -10,11 +10,11 @@ else
 fi
 echo "Please enter your owners id"
 read input
-pass=$(echo "$input" | openssl enc -e -aes256 -k symmetrickey)
-if [ "$pass" = 'Salted__???V+???]?N!X?:z?>' ] 
+pass=$(echo "$input" | openssl enc -base64)
+if [ "$pass" = 'MTgxMgo=' ] 
 then
   echo "Welcome Nathan"
-elif [ "$pass" = 'Salted__??B???Շp?>???D???1.?' ]
+elif [ "$pass" = 'MTIxOAo=' ]
 then
   echo "Welcome Gy"
   else
