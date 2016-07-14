@@ -1,0 +1,15 @@
+LOCALE
+_______________________________________
+
+git pull origin master
+git commit -am ""
+git push origin master
+
+UNTRACKED FILES
+____________________
+git add *
+
+
+IN SERVER
+________________________________________
+sudo ./git.sh
