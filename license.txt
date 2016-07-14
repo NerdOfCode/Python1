@@ -1,4 +1,6 @@
-The software in this repository may only be modified for personal or educational use. Any other use is striclty prohibited unless you are given written permission by the authors of the software. Anything anyone submits to us is also under this license.
+The software in this repository may only be modified for personal or educational use. 
+Any other use is striclty prohibited unless you are given written permission by the authors of the software. Anything anyone 
+submits to us is also under this license.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
