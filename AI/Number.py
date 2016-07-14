@@ -2,6 +2,7 @@ import sys
 name=sys.argv[1]
 with open('.%s.dat' %name, 'r') as datafile:
         data=datafile.read()
+print(data)
 if "Favorite Number:" in data:
   for line in data.splitlines():
     if "Favorite Number:" in line:
