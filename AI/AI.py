@@ -9,7 +9,7 @@ if datacheck == 1:
 	with open('.data.dat', 'r') as datafile:
 		data=datafile.read()
 	name=raw_input("Which user are you (full user name)?: ")
-	#If the name is in the datafile and they have a custom file -line=12
+	#If the name is in the datafile and they have a custom file
 	if name in data and os.path.isfile(".%s.dat" %name):
 		name1=name
 	else:
@@ -23,12 +23,14 @@ if datacheck == 1:
 		with open('.data.dat', 'a') as datafile:
 			datafile.write("\n")
 			datafile.write(name)
-		#Make a custom use file -line=26
+		#Make a custom use file
 		with open(".%s.dat" %name, 'w') as userfile:
 			userfile.write("")
-			
-		#Write user's name to a file -line=29
-	#Ask for command -line=30
+		os.system("python color.py")
+		os.system("python birthday.py")
+		os.system("python number.py")
+		
+	#Ask for command
 	while True:
 		print("Hello, %s, how can I help you?" %name1) 
 		command=raw_input("Command: ")
@@ -98,4 +100,7 @@ else:
 	file.write(name)
 	with open(".%s.dat" %name, 'w') as userfile:
 		userfile.write("")
+	os.system("python color.py")
+	os.system("python birthday.py")
+	os.system("python number.py")
 	print("Hello, %s, please restart the program."%name)
