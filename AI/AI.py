@@ -3,13 +3,12 @@ import sys
 #If running for the first/second time set name to something
 if len(sys.argv) > 1:
 	name=sys.argv[1]
-else:
-	name=raw_input("Which user are you (full user name)?: ")
 print("Hello, I am a Learning computer")
 #Check if name data exists
 datacheck=os.path.isfile(".data.dat")
 #If the file exists then
 if datacheck == 1:
+	name=raw_input("Which user are you (full user name)?: ")
 	#Make data file a variable
 	with open('.data.dat', 'r') as datafile:
 		data=datafile.read()
