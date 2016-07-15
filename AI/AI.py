@@ -1,6 +1,6 @@
 import os
 import sys
-name=sys.argv[1] or name=""
+name=sys.argv[1] or name="name"
 print("Hello, I am a Learning computer")
 #Check if name data exists
 datacheck=os.path.isfile(".data.dat")
