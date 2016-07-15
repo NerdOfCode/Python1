@@ -98,9 +98,9 @@ else:
 		print("No spaces.")
 		name = raw_input("Name(no spaces): ")
 	#Write user's name to a file
-	file = open(".data.dat", 'w')
-	file.truncate()
-	file.write(name)
+	with open(".data.dat", 'w') as file:
+		file.truncate()
+		file.write(name)
 	with open(".%s.dat" %name, 'w') as userfile:
 		userfile.write("")
 	os.system("python color.py %s" %name)
