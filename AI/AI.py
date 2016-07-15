@@ -1,5 +1,6 @@
 import os
 import sys
+name=sys.argv[1]
 print("Hello, I am a Learning computer")
 #Check if name data exists
 datacheck=os.path.isfile(".data.dat")
@@ -26,9 +27,9 @@ if datacheck == 1:
 		#Make a custom use file
 		with open(".%s.dat" %name, 'w') as userfile:
 			userfile.write("")
-		os.system("python color.py")
-		os.system("python birthday.py")
-		os.system("python number.py")
+		os.system("python color.py %s" %name)
+		os.system("python birthday.py %s" %name)
+		os.system("python number.py %s" %name)
 		
 	#Ask for command
 	while True:
@@ -100,7 +101,7 @@ else:
 	file.write(name)
 	with open(".%s.dat" %name, 'w') as userfile:
 		userfile.write("")
-	os.system("python color.py")
-	os.system("python birthday.py")
-	os.system("python number.py")
-	print("Hello, %s, please restart the program."%name)
+	os.system("python color.py %s" %name)
+	os.system("python birthday.py %s" %name)
+	os.system("python number.py %s" %name)
+	os.system("python AI.py %s" %name)
