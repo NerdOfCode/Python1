@@ -1,6 +1,10 @@
 import os
 import sys
-name=sys.argv[1] or name="name"
+#If running for the first/second time set name to something
+if len(sys.argv) > 1:
+	name=sys.argv[1]
+else:
+	name="name"
 print("Hello, I am a Learning computer")
 #Check if name data exists
 datacheck=os.path.isfile(".data.dat")
