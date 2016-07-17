@@ -6,6 +6,7 @@ if len(sys.argv) > 1:
 print("Hello, I am a Learning computer")
 #Check if name data exists
 datacheck=os.path.isfile(".data.dat")
+os.system("alias say=\"espeak\"")
 #If the file exists then
 if datacheck == 1:
 	name=raw_input("Which user are you (full user name)?: ")
@@ -15,7 +16,7 @@ if datacheck == 1:
 	#If the name is in the datafile and they have a custom file
 	if name in data and os.path.isfile(".%s.dat" %name):
 		name1=name
-		os.system("say Hello %s" %name1)
+		os.system("echo Hello %s | say" %name1)
 	else:
 		print("That is not a user. Making a new one...")
 		print("What is your name?")
@@ -36,7 +37,7 @@ if datacheck == 1:
 		os.system("bash colors.sh " )
 	#Ask for command
 	while True:
-		os.system("say Hello, %s, how can I help you?" %name1) 
+		os.system("echo Hello, %s, how can I help you? | say" %name1) 
 		command=raw_input("Command: ")
 		#Check if the command has a program
 		programcheck=os.path.isfile("%s.py" %command)
