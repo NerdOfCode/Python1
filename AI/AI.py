@@ -65,10 +65,12 @@ if datacheck == 1:
                         os.system("g++ %s.cpp" %command)
                         os.system("./a.out")
                         os.remove("a.out")
+                        print("")
                 elif ccheck == 1:
                 	os.system("gcc -o %s %s.c" %(command, command))
                 	os.system("./%s" %command)
                 	os.remove("%s" %command)
+                	print("")
                         
 	        else: 
 			#Ask the user is they would like to make a program -line=around63
