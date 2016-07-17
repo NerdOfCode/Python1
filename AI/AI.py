@@ -66,7 +66,7 @@ if datacheck == 1:
                         os.system("./a.out")
                         os.remove("a.out")
                 elif ccheck == 1:
-                	os.system("gcc -o %s %s.c" %command)
+                	os.system("gcc -o %s %s.c" %(command, command))
                 	os.system("./%s" %command)
                 	os.remove("%s" %command)
                         
