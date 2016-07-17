@@ -1,6 +1,7 @@
 import os
-import platform
 import sys
+import pyttsx
+engine = pyttsx.init()
 #If running for the first/second time set name to something
 if len(sys.argv) > 1:
 	name=sys.argv[1]
@@ -9,8 +10,7 @@ print("Hello, I am a Learning computer")
 #Check if name data exists
 datacheck=os.path.isfile(".data.dat")
 #If the file exists then
-if "Linux" in platform.system():
-	speak="espeak"
+
 else:
 	speak="say"
 if datacheck == 1:
@@ -21,7 +21,8 @@ if datacheck == 1:
 	#If the name is in the datafile and they have a custom file
 	if name in data and os.path.isfile(".%s.dat" %name):
 		name1=name
-		os.system("echo Hello %s | %s" %(name1, speak))
+		engine.say("Welcome, %s" %name)
+		engine.runAndwait()
 	else:
 		print("That is not a user. Making a new one...")
 		print("What is your name?")
@@ -42,7 +43,8 @@ if datacheck == 1:
 		os.system("bash colors.sh " )
 	#Ask for command
 	while True:
-		os.system("echo Hello, %s, how can I help you? | %s" %(name1, speak)) 
+		engine.say("Hello, how can I help you, %s?" %name)
+		engine.runAndwait() 
 		command=raw_input("Command: ")
 		#Check if the command has a program
 		programcheck=os.path.isfile("%s.py" %command)
