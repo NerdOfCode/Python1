@@ -36,7 +36,7 @@ if datacheck == 1:
 		os.system("bash colors.sh " )
 	#Ask for command
 	while True:
-		print("Hello, %s, how can I help you?" %name1) 
+		os.system("say Hello, %s, how can I help you?" %name1) 
 		command=raw_input("Command: ")
 		#Check if the command has a program
 		programcheck=os.path.isfile("%s.py" %command)
