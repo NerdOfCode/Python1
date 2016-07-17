@@ -42,6 +42,7 @@ if datacheck == 1:
 		shellcheck=os.path.isfile("%s.sh" %command)
 		javacheck=os.path.isfile("%s.java" %command)
 		cppcheck=os.path.isfile("%s.cpp" %command)
+		ccheck=os.path.isfile("%s.c" %command)
 		#Replace space with backslash and space
 		command = command.replace(" ", "\\ ")
 		#If there is a program then
@@ -64,6 +65,10 @@ if datacheck == 1:
                         os.system("g++ %s.cpp" %command)
                         os.system("./a.out")
                         os.remove("a.out")
+                elif ccheck == 1:
+                	os.system("gcc -o %s %s.c" %command)
+                	os.system("./%s" %command)
+                	os.remove("%s" %command)
                         
 	        else: 
 			#Ask the user is they would like to make a program -line=around63
