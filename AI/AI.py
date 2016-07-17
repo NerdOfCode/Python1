@@ -10,9 +10,6 @@ print("Hello, I am a Learning computer")
 #Check if name data exists
 datacheck=os.path.isfile(".data.dat")
 #If the file exists then
-
-else:
-	speak="say"
 if datacheck == 1:
 	name=raw_input("Which user are you (full user name)?: ")
 	#Make data file a variable
