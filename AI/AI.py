@@ -19,7 +19,7 @@ if datacheck == 1:
 	if name in data and os.path.isfile(".%s.dat" %name):
 		name1=name
 		engine.say("Welcome, %s" %name)
-		engine.runAndwait()
+		engine.runAndWait()
 	else:
 		print("That is not a user. Making a new one...")
 		print("What is your name?")
@@ -41,7 +41,7 @@ if datacheck == 1:
 	#Ask for command
 	while True:
 		engine.say("Hello, how can I help you, %s?" %name)
-		engine.runAndwait() 
+		engine.runAndWait() 
 		command=raw_input("Command: ")
 		#Check if the command has a program
 		programcheck=os.path.isfile("%s.py" %command)
