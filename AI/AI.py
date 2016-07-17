@@ -32,7 +32,7 @@ if datacheck == 1:
 		os.system("python color.py %s" %name)
 		os.system("python birthday.py %s" %name)
 		os.system("python number.py %s" %name)
-		
+		os.system("bash colors.sh " )
 	#Ask for command
 	while True:
 		print("Hello, %s, how can I help you?" %name1) 
