@@ -37,16 +37,17 @@ if datacheck == 1:
 	while True:
 		print("Hello, %s, how can I help you?" %name1) 
 		command=raw_input("Command: ")
-		#Check if the command has a program -line=34
+		#Check if the command has a program
 		programcheck=os.path.isfile("%s.py" %command)
 		shellcheck=os.path.isfile("%s.sh" %command)
 		javacheck=os.path.isfile("%s.java" %command)
 		cppcheck=os.path.isfile("%s.cpp" %command)
-		#Replace space with backslash and space -line=40
+		ccheck=os.path.isfile("%s.c" %command)
+		#Replace space with backslash and space
 		command = command.replace(" ", "\\ ")
-		#If there is a program then -line=42
+		#If there is a program then
 		if programcheck == 1:
-			#Run the program using os.system -line=44
+			#Run the program using os.system
 			os.system("python %s.py %s" %(command, name1))
 			continue
 		elif shellcheck == 1:
@@ -64,6 +65,10 @@ if datacheck == 1:
                         os.system("g++ %s.cpp" %command)
                         os.system("./a.out")
                         os.remove("a.out")
+                elif ccheck == 1:
+                	os.system("gcc -o %s %s.c" %(command, command))
+                	os.system("./%s" %command)
+                	os.remove("%s" %command)
                         
 	        else: 
 			#Ask the user is they would like to make a program -line=around63
