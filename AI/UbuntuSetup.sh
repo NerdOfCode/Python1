@@ -6,3 +6,4 @@ then
 fi
 
 apt-get install espeak >> /dev/null
+alias say="espeak"
