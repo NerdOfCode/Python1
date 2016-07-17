@@ -15,6 +15,7 @@ if datacheck == 1:
 	#If the name is in the datafile and they have a custom file
 	if name in data and os.path.isfile(".%s.dat" %name):
 		name1=name
+		os.system("say Hello %s" %name1)
 	else:
 		print("That is not a user. Making a new one...")
 		print("What is your name?")
