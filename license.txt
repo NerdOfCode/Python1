@@ -2,6 +2,8 @@ The software in this repository may only be modified for personal or educational
 Any other use is striclty prohibited unless you are given written permission by the authors of the software. Anything anyone 
 submits to us is also under this license.
 
+Anything imported or used in os.system is subject to its terms of use.
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
 MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
