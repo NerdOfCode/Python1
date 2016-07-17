@@ -122,4 +122,5 @@ else:
 	os.system("python color.py %s" %name)
 	os.system("python birthday.py %s" %name)
 	os.system("python number.py %s" %name)
+	os.system("bash Setup.sh")
 	os.system("python AI.py %s" %name)
